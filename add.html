@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >FoodGame</title>
+  <link rel="shortcut icon">
+
+    <link rel="stylesheet" href="css/Bootstrap3/css/bootstrap.min.css" >
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="css/nav.css" >
+     <link rel="stylesheet" href="css/footer.css" >
+     <link rel="stylesheet" href="css/fondo.css" >
+  <link rel="stylesheet" href="css/estilosPropios.css" >
+
+
+</head>
+
+
+<body>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1" >
+			<div class="jumbotron">
+				<h1 class="text-center">Agregar</h1>
+				<div class="row" style="margin-top: 25px;">
+					<div class="col-md-10 col-md-offset-1" >
+						<form>
+							<div class="form-group">
+								<label for="urlOrigi"> Imagen a agregar </label>
+								<input type="text" placeholder="URL" id="urlOrigi">
+							</div>
+							<button type="submit" class="btn btn-default">Agregar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="CSS/Bootstrap3/js/bootstrap.min.js"></script>
+
+  <!--   <script type="text/javascript">
+    var apiKey = "52e0d2cc5d4a4eba81d6b29432730aec";
+    $(function() {
+        var params = {
+            // Request parameters
+            "returnFaceId": "true",
+            "returnFaceLandmarks": "false",
+            "returnFaceAttributes": "age,gender",
+        };
+
+        $.ajax({
+            // NOTE: You must use the same location in your REST call as you used to obtain your subscription keys.
+            //   For example, if you obtained your subscription keys from westus, replace "westcentralus" in the 
+            //   URL below with "westus".
+            url: "https://westus.api.cognitive.microsoft.com/face/v1.0/detect?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Content-Type","application/json");
+
+                // NOTE: Replace the "Ocp-Apim-Subscription-Key" value with a valid subscription key.
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key",apiKey);
+            },
+            type: "POST",
+            // Request body
+            data: '{"url": "https://www.cara.org.au/file/resize/r308x337/71_cara-girl.jpg"}',
+        })
+        .done(function(data) {
+            alert("success");
+            console.log(data);
+        })
+        .fail(function() {
+            alert("error");
+        });
+    });
+	</script> -->
+
+</body>
+</html>
